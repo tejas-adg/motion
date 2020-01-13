@@ -93,7 +93,7 @@ static void exec_command(struct context *cnt, char *command, char *filename, int
             close(i);
 
         //execl("/bin/sh", "sh", "-c", stamp, " &", NULL);
-        execl("/usr/bin/python3", "", "/home/pi/Documents/hello.py", NULL);
+        execl("/usr/bin/python3", "python3", "/home/pi/Documents/emailer.py", NULL);
 
         /* if above function succeeds the program never reach here */
         MOTION_LOG(ALR, TYPE_EVENTS, SHOW_ERRNO
